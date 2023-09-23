@@ -26,3 +26,8 @@ console.log(state, typeof(state));
 console.log(typeof undefined);  // undefined
 console.log(typeof null);   // object
 console.log(typeof NaN);    // number
+
+
+// Link to study => 
+// 1. https://tc39.es/ecma262/
+// 2. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
