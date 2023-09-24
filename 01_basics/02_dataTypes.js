@@ -9,6 +9,7 @@
 // null => standalone value
 // undefined => default value of variable
 // NaN
+// symbol
 
 
 // object
