@@ -1,7 +1,10 @@
 Context are of type:  
 1. Global Execution Context,  
 2. Function Execution Context, and  
-3. Eval Execution Context (part of global context).  
+3. Eval Execution Context (part of global context).
+
+![image](https://github.com/Aayush1472012/js-practice-yt/assets/62372257/b10262c7-c911-4553-a97a-8fe8e7973822)
+
 
 
 How JS code is executed ???
