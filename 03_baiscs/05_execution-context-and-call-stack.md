@@ -14,6 +14,7 @@ How JS code is executed ???
 4. Next it creates the 'execution phase'.  
 5. Execution phase - In this phase, the variables are initialsed to given values and when the functions are called, it creates a memory phase and execution phase for the function just like the main one.
 
+![Uploading image.png…]()
 
 
 For live demo:  
