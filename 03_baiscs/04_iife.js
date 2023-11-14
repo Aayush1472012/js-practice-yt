@@ -1,4 +1,5 @@
 // Immediately Invoked Function Expressions (IIFE)
+// IIFE is used to immediately run function & to avoid the pollution created due to global variables.
 
 // named IIFE
 (function chai(){
