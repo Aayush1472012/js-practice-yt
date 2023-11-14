@@ -1,4 +1,5 @@
 // Syntax:
+// -----------------------
 // if (condition) {
 //     // if block logic
 // } else {
