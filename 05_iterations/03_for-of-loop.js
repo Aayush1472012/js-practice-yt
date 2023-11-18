@@ -1,7 +1,7 @@
 // array of strings -> ["", "", ""]
 // array of objects -> [{}, {}, {}]
 
-// we can iterate over 'Array', 'String', 'Map' using for-of loop, but we cannot iterate over object using for-of loop.
+// we can iterate over 'Array', 'String', 'Map' using for-of loop, but we cannot iterate over 'Object' using for-of loop.
 
 
 // Array
