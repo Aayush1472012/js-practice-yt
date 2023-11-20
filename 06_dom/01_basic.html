@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1 id="title">DOM Basics <span style="display: none;">test text</span> </h1>
+
+    <h3> 1 Lorem ipsum dolor sit amet consectetur. </h3>
+    <h3> 2 Lorem ipsum dolor sit amet consectetur. </h3>
+    <h3> 3 Lorem ipsum dolor sit amet consectetur. </h3>
+    <h3> 4 Lorem ipsum dolor sit amet consectetur. </h3>
+
+    <input type="password" name="password" id="pass">
+
+    <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+    </ul>
+</body>
+<script>
+    const h1 = document.getElementById('title');
+    console.log(h1);        // prints whole element
+
+    const title = document.querySelector('#title');
+    console.log(title);     // prints whole element
+
+    console.log(title.innerHTML);   // DOM Basics <span style="display: none;">test text</span>
+    console.log(title.innerText);   // DOM Basics
+    console.log(title.textContent); // DOM Basics test text
+
+    const h3Element = document.querySelector('h3');
+    console.log(h3Element);     // prints first h3 element
+    h3Element.style.backgroundColor = 'pink';     // modifies background color
+
+    const input = document.querySelector('input[type=password]');
+    console.log(input);         // <input type="password" name="password" id="pass">
+
+    const myListItems = document.querySelectorAll('li');    // returns NodeList
+    console.log(myListItems);   // prints NodeList
+    console.log(myListItems[2]);    // accessing 3rd element of NodeList
+
+
+    // querySelector is used to select a single element from the DOM tree, while document.
+    // querySelectorAll is used to select multiple elements from the DOM tree.
+
+
+    const listItems = document.getElementsByClassName('list-item');     // returns HTMLCollection
+    console.log(listItems);     // prints HTMLCollection
+    console.log(listItems[2]);  // // accessing 3rd element of HTMLCollection
+
+
+    // An HTMLCollection is a collection of document elements.
+    // A NodeList is a collection of document nodes (element nodes, attribute nodes, and text nodes).
+    // HTMLCollection items can be accessed by their name, id, or index number.
+    // NodeList items can only be accessed by their index number.
+
+</script>
+</html>
