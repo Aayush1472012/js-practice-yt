@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent & Child in JS</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="parent">
+        <li class="days">Monday</li>
+        <li class="days">Tuesday</li>
+        <li class="days">Wednesday</li>
+        <li class="days">Thursday</li>
+    </ul>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);   // returns HTMLCollection of childrens
+    console.log(parent.children[0].innerHTML);  // Monday
+
+    // traverse over HTMLCollection of childrens of parent
+    for(let i=0; i<parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+    }
+
+    // changing css
+    parent.children[1].style.color = 'pink';
+
+    // different properties of parent
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+
+    const dayOne = document.querySelector('.days');
+    console.log(dayOne);
+
+    console.log(dayOne.parentElement);
+    console.log(dayOne.parentNode);
+
+    console.log(dayOne.nextElementSibling);
+
+    console.log(parent.childNodes);     // returns NodeList
+
+    // A NodeList is a collection of document nodes which includes text nodes , attribute nodes and element nodes.
+    // A line break is also counted in nodelist but only first one. All subsequent line breaks are ignored by browser.
+
+</script>
+</html>
