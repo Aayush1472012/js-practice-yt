@@ -1,0 +1,10 @@
+html, body{
+    background-color: #212121;
+    color: #fff;
+}
+
+#clock{
+    background-color: blueviolet;
+    width: 140px;
+    padding: 5px;
+}
