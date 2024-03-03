@@ -37,4 +37,4 @@ const url = "https://aayush.com/aayush%20patel";
 
 console.log(url.replace('%20', '--'));   // replace given 1st character ('%20') with 2nd character ('-')
 console.log(url.includes('aayush'));    // checks whether given string is part of main string or not
-console.log(siteName.split('-'));            // return array of string which is created when main string is splited by given charcater
+console.log(siteName.split('-'));       // return array of string which is created when main string is splited by given charcater
